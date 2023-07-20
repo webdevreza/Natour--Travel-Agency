@@ -1,0 +1,31 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    display: inline-block;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1;
+    text-align: center;
+    padding: 1.5rem 3rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin-bottom: 0;
+    touch-action: manipulation;
+    white-space: nowrap;
+  }
+  // &:active{}
+}
+.btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-light-1);
+}
+.btn-seconday {
+  background-color: var(--color-secondary);
+  color: var(--color-light-1);
+}
+.btn-light {
+  background-color: var(--color-light-1);
+  color: var(--color-primary);
+}

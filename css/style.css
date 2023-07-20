@@ -1,0 +1,208 @@
+/*===========
+abstracts
+=============*/
+:root {
+  --color-primary: #4400ff;
+  --color-primary-dark: #b28451;
+  --color-secondary: #101d2c;
+  --color-light: #fff;
+  --color-light-1: #f9f7f6;
+  --color-light-2: #aaa;
+  --color-dark: #000;
+  --color-dark-1: #54483a;
+  --color-dark-2: #6d5d4b;
+  --font-primary: "Nunito", sans-serif;
+  --font-secondary: "Josefin Sans", sans-serif;
+  --transition-1: ease-in-out 0.2s;
+  --transition-2: ease-in 0.3s;
+  --line: 1px solid #f9f7f6;
+}
+
+.heading-4, .heading-3, .heading-2, .heading-1 {
+  font-family: var(--font-secondary);
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.lead-2, .lead-1, body {
+  font-family: var(--font-primary);
+  font-weight: 300;
+}
+
+/*
+Mobile group--- 360,414,390,412,375,393,428,480  
+Tablet group (p)--- 768,810,1280,800,601,962,1024,834,1334 
+Tablet group (L)--- 962,1024 
+Desktop group--- 1920, 1366,1536,1280,1440,1600,2560 
+Big Desktop --- 1920, 2560
+---------------------------
+1em = 16px, em is better for media query. 
+em unit will be changed automatically if user have changed his browser default font size.
+*/
+/*===========
+base
+=============*/
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media only screen and (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* Theme default css*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+a:focus,
+button:focus,
+input:focus,
+textarea,
+textarea:focus {
+  outline: 0;
+}
+
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
+::-moz-placeholder {
+  color: #555;
+  font-size: 14px;
+  opacity: 1;
+}
+
+::placeholder {
+  color: #555;
+  font-size: 14px;
+  opacity: 1;
+}
+
+::-moz-selection {
+  background: #444;
+  color: #fff;
+  text-shadow: none;
+}
+
+::selection {
+  background: #444;
+  color: #fff;
+  text-shadow: none;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: var(--color-dark-2);
+}
+
+.heading-1 {
+  font-size: 7.2rem;
+}
+
+.heading-2 {
+  font-size: 4.8rem;
+}
+
+.heading-3 {
+  font-size: 3.6rem;
+}
+
+.heading-4 {
+  font-size: 2.4rem;
+}
+
+.u-section-padding {
+  padding: 15rem 0;
+}
+
+.u-blockquote {
+  border-left: 2px solid;
+  padding: 1rem 1.5rem 1rem 3.5rem;
+  margin: 2.5rem 0;
+  font-size: 1.8rem;
+  line-height: 1.6;
+}
+
+.u-blockquote > cite {
+  font-weight: 400;
+  font-size: 1.4rem;
+  display: block;
+} /*===========
+components
+=============*/
+.btn, .btn:link, .btn:visited {
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1;
+  text-align: center;
+  padding: 1.5rem 3rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  margin-bottom: 0;
+  touch-action: manipulation;
+  white-space: nowrap;
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-light-1);
+}
+
+.btn-seconday {
+  background-color: var(--color-secondary);
+  color: var(--color-light-1);
+}
+
+.btn-light {
+  background-color: var(--color-light-1);
+  color: var(--color-primary);
+}
+
+/*===========
+layout
+=============*/
+/*===========
+pages
+=============*//*# sourceMappingURL=style.css.map */
