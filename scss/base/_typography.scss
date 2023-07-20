@@ -1,29 +1,17 @@
-body{
-    @extend %lead;
-    font-size: 1.6rem;
-    line-height: 1.6;
-    color: var(--color-dark-2);
+body {
+  font-family: var(--font-primary);
+  font-size: 1.6rem;
+  line-height: 1.6;
 }
-.heading-1{
-    @extend %heading;
-    font-size: 7.2rem;
+.heading-1 {
+  font-size: 7.2rem;
 }
-.heading-2{
-    @extend %heading;
-    font-size: 4.8rem;
+.heading-2 {
+  font-size: 4.8rem;
 }
-.heading-3{
-    @extend %heading;
-    font-size: 3.6rem;
+.heading-3 {
+  font-size: 3.6rem;
 }
-.heading-4{
-    @extend %heading;
-    font-size: 2.4rem;
-}
-
-.lead-1{
-    @extend %lead;
-}
-.lead-2{
-    @extend %lead;
+.heading-4 {
+  font-size: 2.4rem;
 }

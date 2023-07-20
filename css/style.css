@@ -2,31 +2,18 @@
 abstracts
 =============*/
 :root {
-  --color-primary: #4400ff;
-  --color-primary-dark: #b28451;
-  --color-secondary: #101d2c;
+  --color-primary: #55c57a;
+  --color-primary-gradient: linear-gradient(to right, #7ed56f, #28b485);
+  --color-secondary-gradient: linear-gradient(
+    to right bottom,
+    #ffb900,
+    #ff7730
+  );
+  --color-tertiary-gradient: linear-gradient(to right bottom, #2998ff, #5643fa);
   --color-light: #fff;
-  --color-light-1: #f9f7f6;
-  --color-light-2: #aaa;
   --color-dark: #000;
-  --color-dark-1: #54483a;
-  --color-dark-2: #6d5d4b;
-  --font-primary: "Nunito", sans-serif;
-  --font-secondary: "Josefin Sans", sans-serif;
-  --transition-1: ease-in-out 0.2s;
-  --transition-2: ease-in 0.3s;
-  --line: 1px solid #f9f7f6;
-}
-
-.heading-4, .heading-3, .heading-2, .heading-1 {
-  font-family: var(--font-secondary);
-  font-weight: 400;
-  line-height: 1.2;
-}
-
-.lead-2, .lead-1, body {
-  font-family: var(--font-primary);
-  font-weight: 300;
+  --color-dark-1: #333;
+  --font-primary: "Lato", sans-serif;
 }
 
 /*
@@ -106,33 +93,33 @@ img {
 }
 
 ::-moz-placeholder {
-  color: #555;
+  color: var(--color-dark-1);
   font-size: 14px;
   opacity: 1;
 }
 
 ::placeholder {
-  color: #555;
+  color: var(--color-dark-1);
   font-size: 14px;
   opacity: 1;
 }
 
 ::-moz-selection {
-  background: #444;
+  background: var(--color-primary);
   color: #fff;
   text-shadow: none;
 }
 
 ::selection {
-  background: #444;
+  background: var(--color-primary);
   color: #fff;
   text-shadow: none;
 }
 
 body {
+  font-family: var(--font-primary);
   font-size: 1.6rem;
   line-height: 1.6;
-  color: var(--color-dark-2);
 }
 
 .heading-1 {

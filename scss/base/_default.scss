@@ -40,12 +40,12 @@ img {
   display: block;
 }
 ::placeholder {
-  color: #555;
+  color: var(--color-dark-1);
   font-size: 14px;
   opacity: 1;
 }
 ::selection {
-  background: #444;
+  background: var(--color-primary);
   color: #fff;
   text-shadow: none;
 }
